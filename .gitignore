@@ -1,0 +1,9 @@
+# vim
+*.swp
+
+# defalt cfg
+snow.yml
+
+# python
+*.pyc
+__pycache__
