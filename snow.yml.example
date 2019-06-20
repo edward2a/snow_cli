@@ -1,0 +1,8 @@
+---
+# The host id for the instance, for example dev78021
+# the pysnow library will complete the URL
+host: dev78021
+
+# The user and password for the instance
+user: admin
+pass: aVerySecur3P@ssw0rD
