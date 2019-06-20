@@ -5,10 +5,17 @@ import argparse
 #import json
 import pysnow
 import snow_cli
+import sys
 import yaml
 
 from pprint import pprint
 from types import SimpleNamespace
+
+
+# validate python version, 3.7+ required
+if not (sys.version_info[0] == 3 and sys.version_info[1] == 7):
+    print('\n\tYou need python 3.7!\n')
+    exit(1)
 
 
 apis = SimpleNamespace(
@@ -16,7 +23,6 @@ apis = SimpleNamespace(
     change      = '/table/change_request',
     incident    = '/table/incident'
 )
-
 
 
 def parse_args():
