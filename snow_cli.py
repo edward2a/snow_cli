@@ -29,7 +29,7 @@ def app_get(res_h, args):
     # If records, print, else print empty
     if len(resp) > 0:
         for r in resp:
-            print(json.dumps(resp))
+            print(json.dumps(r))
         return True
     else:
         print('{}')
